@@ -44,7 +44,7 @@ class MainActivity : AppCompatActivity() {
         result ->
         if (result.resultCode == Activity.RESULT_OK) {
             val task = GoogleSignIn.getSignedInAccountFromIntent(result.data)
-
+asdasdsadasd
             if (task.isSuccessful) {
                 val account: GoogleSignInAccount? = task.result
                 val credential = GoogleAuthProvider.getCredential(account?.idToken, null)
