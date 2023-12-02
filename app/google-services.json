@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "521529168832",
+    "project_id": "gentle-cinema-392308",
+    "storage_bucket": "gentle-cinema-392308.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:521529168832:android:13591fc2b83e9428aa2e25",
+        "android_client_info": {
+          "package_name": "com.example.firebaseapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "521529168832-ogs8d5rl87q81nrnf0bjp227k84dcbn4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.firebaseapp",
+            "certificate_hash": "db7f70dff0fefbf7f4f41fda1b258cc992b40a6b"
+          }
+        },
+        {
+          "client_id": "521529168832-kue11ejapo2mgv4pd7dp87a4l2n8fvhg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCh2FCmmbhlM1-XVJKLgc9lQ-9hMyWT4NM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "521529168832-kue11ejapo2mgv4pd7dp87a4l2n8fvhg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

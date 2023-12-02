@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#750E21"
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="300dp"
+        android:background="@drawable/shape"
+        android:orientation="horizontal">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- Password dan memunculkan mata -->
+
+            <EditText
+                android:id="@+id/et_user"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/shape"
+                android:elevation="1dp"
+                android:hint="Email"
+                android:inputType="textCapSentences"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                app:layout_constraintEnd_toEndOf="@+id/tv_1"
+                app:layout_constraintStart_toStartOf="@+id/tv_1"
+                app:layout_constraintTop_toBottomOf="@+id/tv_1"
+                tools:text="Test" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout2"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:elevation="1dp"
+                android:textColorHint="#B9B8B8"
+                app:layout_constraintEnd_toEndOf="@+id/tv_1"
+                app:layout_constraintStart_toStartOf="@+id/tv_1"
+                app:layout_constraintTop_toBottomOf="@+id/et_user"
+                app:passwordToggleEnabled="true">
+
+                <EditText
+                    android:id="@+id/et_password"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:padding="5dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btn_signup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Sign Up"
+                app:layout_constraintEnd_toEndOf="@+id/textInputLayout2"
+                app:layout_constraintStart_toStartOf="@+id/textInputLayout2"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayout2" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_google"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginBottom="32dp"
+                android:background="@color/white"
+                android:drawableLeft="@drawable/google"
+                android:drawablePadding="2dp"
+                android:text="Google"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Selamat Datang"
+                android:textSize="34sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.419"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.122" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</LinearLayout>
